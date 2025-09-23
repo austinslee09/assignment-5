@@ -6,6 +6,13 @@ let workers=[
 //array complete for 3 employees
 
 function calculateBasePay(rate, hours) {
-    return(rate*hours, hours>40)
+  if (hours<=40) {
+ return rate*hours;
+  }else(40<hours);
+  {
+ return(rate*hours)+(hours>40 *1.5);
+  }   
 }
+function calculateOvertimePay(rate, hours){}
+function calculateOvertimePay(rate, hours){}
 console.log()
