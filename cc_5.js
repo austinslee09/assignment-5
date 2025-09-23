@@ -8,11 +8,13 @@ let workers=[
 function calculateBasePay(rate, hours) {
   if (hours<=40) {
  return rate*hours;
-  }else(40<hours);
-  {
- return(rate*hours)+(hours>40 *1.5);
-  }   
+  }
 }
-function calculateOvertimePay(rate, hours){}
-function calculateOvertimePay(rate, hours){}
+// function for regular pay
+function calculateOvertimePay(rate, hours){
+    if (hours>40){
+    return(rate*hours)+(hours-40 *1.5);}
+}
+// function for overtime pay
+
 console.log()
