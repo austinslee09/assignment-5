@@ -19,5 +19,6 @@ function calculateOvertimePay(rate, hours){
 console.log(calculateOvertimePay)
 // function for overtime pay
 function calculateTaxes(grossPay){
-
+return pay*.85
 }
+
