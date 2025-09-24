@@ -4,3 +4,4 @@ return function(discount)
 }
 
 let discount= finalDiscount(.1);
+//
