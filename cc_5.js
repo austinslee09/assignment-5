@@ -14,7 +14,7 @@ function calculateBasePay(hourlyRate, hoursWorked) {
 // function for regular pay
 function calculateOvertimePay(hourlyRate, hoursWorked){
     if (hoursWorked>40){
-    return(hourlyRate-40 *1.5)+(hourlyRate*hoursWorked);}
+    return(hoursWorked-40 *1.5)+(hourlyRate*hoursWorked);}
 }
 console.log(calculateBasePay(workers[2].hourlyRate, workers[2].hoursWorked));
 // function for overtime pay
