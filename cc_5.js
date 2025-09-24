@@ -16,7 +16,7 @@ function calculateOvertimePay(hourlyRate, hoursWorked){
     if (hoursWorked>40){
     return(hoursWorked-40 * 1.5)+(hourlyRate*hoursWorked);}
 }
-console.log(multiply(workers[2].hourlyRate, workers[2].hoursWorked));
+console.log(calculateOvertimePay(workers[2].hourlyRate, workers[2].hoursWorked));
 // function for overtime pay
 function calculateTaxes(grossPay){
 return grossPay*.15
