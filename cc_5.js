@@ -21,6 +21,8 @@ console.log(calculateOvertimePay(workers[2].hourlyRate, workers[2].hoursWorked))
 function calculateTaxes(grossPay){
 return grossPay*.15
 }
+console.log(calculateTaxes(calculateOvertimePay(workers[2].hourlyRate, workers[2].hoursWorked)));
+
 function processPayroll(employee){
-  return {names:Name, }
+  return { }
 }
