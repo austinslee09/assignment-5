@@ -6,24 +6,32 @@ let workers=[
 //array complete for 3 employees
 
 function calculateBasePay(hourlyRate, hoursWorked) {
-  if (hoursWorked<=40) {
- return hourlyRate*hoursWorked;
-  }
+ 
+ return hourlyRate* Math.min(hoursWorked,40);
+  
 }
 
 // function for regular pay
 function calculateOvertimePay(hourlyRate, hoursWorked){
-    if (hoursWorked>40){
-    return(((hoursWorked-40) * 1.5)*hourlyRate)+(40*hourlyRate);}
+    return Math.max(hoursWorked-40,0)*hourlyRate*1.5;
 }
-console.log(calculateOvertimePay(workers[2].hourlyRate, workers[2].hoursWorked));
+
 // function for overtime pay
 function calculateTaxes(grossPay){
 return grossPay*.15
 }
-console.log(calculateTaxes(calculateOvertimePay(workers[2].hourlyRate, workers[2].hoursWorked)));
+
 
 function processPayroll(employee){
-  return {Name }
+  const basePay=;
+  const overtime=;
+  const grossPay= basePat+overtime;
+  const netPay=;
+  return{
+    name: employee.name,
+    basePay: basePay,
+    overtimePay: overtimePay,
+    grossPay: grossPay,
+    netPay: netPay
+  };
 }
-//math.min and max for pay
