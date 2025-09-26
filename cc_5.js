@@ -18,20 +18,23 @@ function calculateOvertimePay(hourlyRate, hoursWorked){
 
 // function for overtime pay
 function calculateTaxes(grossPay){
-return grossPay*.15
+return grossPay*.85
 }
 
 
 function processPayroll(employee){
-  const basePay=;
-  const overtime=;
-  const grossPay= basePat+overtime;
-  const netPay=;
+  const basePay=calculateBasePay(hourlyRate, hoursWorked);
+  const overtime= calculateOvertimePay(hourlyRate, hoursWorked);
+  const grossPay= basePay+overtime;
+  const netPay= grossPay *.85;
   return{
-    name: employee.name,
+    name: Name,
     basePay: basePay,
     overtimePay: overtimePay,
     grossPay: grossPay,
     netPay: netPay
   };
 }
+ for (const employee of employees) {
+        const result = processPayroll(employee);
+ }
