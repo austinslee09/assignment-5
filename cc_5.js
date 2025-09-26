@@ -35,6 +35,6 @@ function processPayroll(employee){
     netPay: netPay
   };
 }
- for (const employee of employees) {
-        const result = processPayroll(employee);
+ for (const worker of workers) {
+        const result = processPayroll(worker);
  }
