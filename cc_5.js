@@ -3,7 +3,7 @@ let workers=[
     {Name:"Terry", hourlyRate:25.50, hoursWorked:25},                       
     {Name:"Larry", hourlyRate:10.00, hoursWorked:41},
 ]
-//array complete for 3 employees
+//array complete for 3 workers
 
 function calculateBasePay(rate, hours) {
  
@@ -24,12 +24,12 @@ return grossPay*.85
 // calculating pay with taxes taken out
 
 function processPayroll(employee){
-  const basePay= calculateBasePay(workers.hourlyRate, workers.hoursWorked);
-  const overtime= calculateOvertimePay(workers.hourlyRate, workers.hoursWorked);
+  const basePay= calculateBasePay(worker.hourlyRate, worker.hoursWorked);
+  const overtime= calculateOvertimePay(worker.hourlyRate, worker.hoursWorked);
   const grossPay= basePay+overtime;
   const netPay= grossPay *.85;
   return{
-    name: workers.Name,
+    name: worker.Name,
     basePay: basePay,
     overtimePay: overtime,
     grossPay: grossPay,
@@ -39,7 +39,7 @@ function processPayroll(employee){
 // Object with pay and names completed
 
 for (const worker of workers) {
-    const result = processPayroll(workers);
+    const result = processPayroll(worker);
     console.log(`Payroll for ${result.name}:`);
     console.log(`Base: $${result.basePay.toFixed(2)}, 
     Overtime: $${result.overtimePay.toFixed(2)},
