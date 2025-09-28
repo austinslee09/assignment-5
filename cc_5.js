@@ -5,15 +5,15 @@ let workers=[
 ]
 //array complete for 3 employees
 
-function calculateBasePay(hourlyRate, hoursWorked) {
+function calculateBasePay(rate, hours) {
  
- return hourlyRate* Math.min(hoursWorked,40);
+ return rate* Math.min(hours,40);
   
 }
 
 // function for regular pay
-function calculateOvertimePay(hourlyRate, hoursWorked){
-    return Math.max(hoursWorked-40,0)*hourlyRate*1.5;
+function calculateOvertimePay(rate, hours){
+    return Math.max(hours-40,0)*rate*1.5;
 }
 
 // function for overtime pay
