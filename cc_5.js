@@ -24,8 +24,8 @@ return grossPay*.85
 // calculating pay with taxes taken out
 
 function processPayroll(employee){
-  const basePay=calculateBasePay(hourlyRate, hoursWorked);
-  const overtime= calculateOvertimePay(hourlyRate, hoursWorked);
+  const basePay=calculateBasePay(rate, hours);
+  const overtime= calculateOvertimePay(rate, hours);
   const grossPay= basePay+overtime;
   const netPay= grossPay *.85;
   return{
