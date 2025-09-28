@@ -21,6 +21,7 @@ function calculateTaxes(grossPay){
 return grossPay*.85
 }
 
+// calculating pay with taxes taken out
 
 function processPayroll(employee){
   const basePay=calculateBasePay(hourlyRate, hoursWorked);
@@ -35,6 +36,11 @@ function processPayroll(employee){
     netPay: netPay
   };
 }
+// Object with pay and names completed
+
  for (const worker of workers) {
-        const result = processPayroll(worker);
+        const finpayroll = processPayroll(worker);
+        console.log(`Pay: ${finpayroll.name}`);
+        console.log(finpayroll)
  }
+ //loops of payroll and name
