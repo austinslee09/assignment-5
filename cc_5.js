@@ -38,9 +38,12 @@ function processPayroll(employee){
 }
 // Object with pay and names completed
 
- for (const worker of workers) {
-        const finpayroll = processPayroll(worker);
-        console.log(`Pay: ${finpayroll.name}`);
-        console.log(finpayroll)
- }
+for (const worker of workers) {
+    const result = processPayroll(worker);
+    console.log(`Payroll for ${result.name}:`);
+    console.log(`Base: $${result.basePay.toFixed(2)}, 
+    Overtime: $${result.overtimePay.toFixed(2)},
+     Gross: $${result.grossPay.toFixed(2)}, 
+     Net: $${result.netPay.toFixed(2)}`);
+}
  //loops of payroll and name
