@@ -31,7 +31,7 @@ function processPayroll(employee){
   return{
     name: workers.Name,
     basePay: basePay,
-    overtimePay: overtimePay,
+    overtimePay: overtime,
     grossPay: grossPay,
     netPay: netPay
   };
