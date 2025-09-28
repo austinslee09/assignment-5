@@ -39,7 +39,7 @@ function processPayroll(employee){
 // Object with pay and names completed
 
 for (const worker of workers) {
-    const result = processPayroll(worker);
+    const result = processPayroll(workers);
     console.log(`Payroll for ${result.name}:`);
     console.log(`Base: $${result.basePay.toFixed(2)}, 
     Overtime: $${result.overtimePay.toFixed(2)},
